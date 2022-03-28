@@ -6,7 +6,7 @@ import { Input } from "../../Forms/Input/Input";
 import { UserContext } from "../../../Contexts/UserContext";
 import { Error } from "../../Helper/Error";
 import styles from "./LoginForm.module.css";
-import stylesBtn from "./../../Forms/Button/Button.module.css"
+import stylesBtn from "./../../Forms/Button/Button.module.css";
 
 export const LoginForm = () => {
   const username = useForm();
@@ -27,17 +27,21 @@ export const LoginForm = () => {
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
         {loading ? (
-          <Button disabled title="  Carregando" />
+          <Button disabled title="Carregando" />
         ) : (
           <Button title="Entrar" />
         )}
         {/* <Error error="error" /> */}
       </form>
-      <Link className={styles.lost} to="/login/lost">Esqueceu a Senha?</Link>
+      <Link className={styles.lost} to="/login/lost">
+        Esqueceu a Senha?
+      </Link>
       <div className={styles.create}>
-          <h2 className={styles.subtitle}>Cadastre-se</h2>
-          <p>Ainda não possui conta? Cadastre=se no site.</p>
-      <Link className={stylesBtn.button} to="/login/create">Criar conta</Link>
+        <h2 className={styles.subtitle}>Cadastre-se</h2>
+        <p>Ainda não possui conta? Cadastre=se no site.</p>
+        <Link className={stylesBtn.button} to="/login/create">
+          Criar conta
+        </Link>
       </div>
     </section>
   );
