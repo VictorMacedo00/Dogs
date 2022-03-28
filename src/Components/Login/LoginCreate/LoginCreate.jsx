@@ -5,7 +5,7 @@ import { useFetch } from "../../../Hooks/useFetch";
 import { useForm } from "../../../Hooks/useForm";
 import { Button } from "../../Forms/Button/Button";
 import { Input } from "../../Forms/Input/Input";
-import styles from "./LoginCreate.module.css";
+import { Error } from "./../../Helper/Error"
 
 export const LoginCreate = () => {
   const { userLogin } = useContext(UserContext);
@@ -23,7 +23,6 @@ export const LoginCreate = () => {
     });
     const { response } = await request(url, options);
     if (response.ok) userLogin(username.value, password.value);
-    // const json = await response.json();
   }
 
   return (
@@ -38,6 +37,7 @@ export const LoginCreate = () => {
         ) : (
           <Button title="Cadastrar" />
         )}
+        <Error error={error} />
       </form>
     </section>
   );
