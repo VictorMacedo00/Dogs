@@ -31,7 +31,6 @@ export const UserStorage = ({ children }) => {
       const { token } = await tokenRes.json();
       window.localStorage.setItem("token", token);
       await getUser(token);
-      console.log("Navigate")
       navigate("/profile");
     } catch (error) {
       setError(error.message);
