@@ -6,7 +6,7 @@ import { ReactComponent as Statistics } from "./../../../Assets/estatisticas.svg
 import { ReactComponent as AddPhoto } from "./../../../Assets/adicionar.svg";
 import { ReactComponent as Logout } from "./../../../Assets/sair.svg";
 import styles from "./ProfileHeaderNav.module.css";
-import useMedia from "../../../Hooks/useMedia";
+import {useMedia} from "../../../Hooks/useMedia";
 
 const ProfileHeaderNav = () => {
   const { userLogout } = useContext(UserContext);
