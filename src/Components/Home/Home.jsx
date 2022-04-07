@@ -1,8 +1,11 @@
-import React from 'react'
-import styles from './Home.module.css'
+import React from "react";
+import styles from "./Home.module.css";
+import Feed from "./../Feed/Feed";
 
 export const Home = () => {
   return (
-    <div className={styles.home}>Home</div>
-  )
-}
+    <section className="container mainContainer">
+      <Feed />
+    </section>
+  );
+};
