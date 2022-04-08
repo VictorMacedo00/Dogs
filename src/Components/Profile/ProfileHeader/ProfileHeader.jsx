@@ -17,7 +17,7 @@ const ProfileHeader = () => {
         setTitle("Adicionar Foto");
         break;
       case "/profile":
-        setTitle("Feed");
+        setTitle("Minha Conta");
         break;
       default:
         setTitle("");
