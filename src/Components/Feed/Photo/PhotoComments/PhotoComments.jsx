@@ -9,7 +9,8 @@ const PhotoComments = (props) => {
   const [comments, setComments] = useState(() => props.comments);
 
   useEffect(() => {
-    commentsSection.current.scrollTop = comments.current.scrollHeight;
+/*     commentsSection.current.scrollTop = comments.current.scrollHeight; */
+    console.log("Scroll ", commentsSection.current)
   }, [comments]);
 
   return (
