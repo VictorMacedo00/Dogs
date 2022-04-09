@@ -7,6 +7,7 @@ import { useFetch } from "../../../Hooks/useFetch";
 import { PHOTO_POST } from "../../../Api/Api";
 import { Error } from "../../Helper/Error";
 import { useNavigate } from "react-router-dom";
+import { Header } from "../../Header/Header";
 
 const ProfilePhotoPost = () => {
   const nome = useForm();

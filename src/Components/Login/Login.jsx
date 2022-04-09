@@ -21,7 +21,7 @@ export const Login = () => {
           <Route path="create" element={<LoginCreate />} />
           <Route path="lost" element={<LoginLost />} />
           <Route path="reset" element={<LoginReset />} />
-          <Route path="*" element={<NotFound />} />
+         {/*  <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>
     </section>

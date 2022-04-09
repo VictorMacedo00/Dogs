@@ -30,7 +30,7 @@ function App() {
               }
             />
             <Route path="photo/:id" element={<Photo />} />
-            <Route path="profile/:user" element={<UserProfile />} />
+            <Route path="user/:user" element={<UserProfile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
