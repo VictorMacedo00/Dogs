@@ -24,7 +24,7 @@ export const LoginLost = () => {
   }
 
   return (
-    <section className={styles.loginLost}>
+    <section className={`${styles.loginLost} animeLeft`}>
       <Head title="Perdeu a senha" description="Home Dogs" />
       <h1 className="title">Perder a senha?</h1>
       {data ? (

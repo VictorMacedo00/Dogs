@@ -5,6 +5,12 @@
     margin-bottom: 2rem;
 }
 
+@media (max-widht: 40rem) {
+    .photoPost {
+        grid-template-columns: 1frs;
+    }
+}
+
 .img {
     margin-bottom: 1rem;
 }

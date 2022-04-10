@@ -38,7 +38,7 @@ export const LoginReset = () => {
   }
 
   return (
-    <div className={styles.loginReset}>
+    <section className={`${styles.loginReset} animeLeft`}>
       <Head title="Reste a Senha" description="Home Dogs" />
       <h1 className="title">Resete a Senha</h1>
       <form onSubmit={handleSubmit}>
@@ -50,6 +50,6 @@ export const LoginReset = () => {
         )}
       </form>
       <Error error={error} />
-    </div>
+    </section>
   );
 };
