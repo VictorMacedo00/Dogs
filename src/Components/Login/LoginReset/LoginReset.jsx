@@ -7,6 +7,7 @@ import { Input } from "../../Forms/Input/Input";
 import styles from "./LoginReset.module.css";
 import { Error } from "../../Helper/Error";
 import { useNavigate } from "react-router-dom";
+import Head from "../../Helper/Head";
 
 export const LoginReset = () => {
   const { login, setLogin } = useState("");
@@ -38,6 +39,7 @@ export const LoginReset = () => {
 
   return (
     <div className={styles.loginReset}>
+      <Head title="Reste a Senha" description="Home Dogs" />
       <h1 className="title">Resete a Senha</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Nova senha" type="password" name="password" {...password} />

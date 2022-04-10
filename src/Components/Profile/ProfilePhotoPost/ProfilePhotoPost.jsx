@@ -8,6 +8,7 @@ import { PHOTO_POST } from "../../../Api/Api";
 import { Error } from "../../Helper/Error";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../Header/Header";
+import Head from "../../Helper/Head";
 
 const ProfilePhotoPost = () => {
   const nome = useForm();
@@ -44,6 +45,7 @@ const ProfilePhotoPost = () => {
 
   return (
     <section className={`${styles.photoPost} animeLeft`}>
+      <Head title="Poste sua foto" description="Home Dogs" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
         <Input label="Peso" type="number" name="peso" {...peso} />

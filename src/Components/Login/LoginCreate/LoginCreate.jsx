@@ -5,6 +5,7 @@ import { useFetch } from "../../../Hooks/useFetch";
 import { useForm } from "../../../Hooks/useForm";
 import { Button } from "../../Forms/Button/Button";
 import { Input } from "../../Forms/Input/Input";
+import Head from "../../Helper/Head";
 import { Error } from "./../../Helper/Error"
 
 export const LoginCreate = () => {
@@ -27,6 +28,7 @@ export const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Criar Conta" description="Home Dogs" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />

@@ -6,12 +6,14 @@ import ProfilePhotoPost from "./ProfilePhotoPost/ProfilePhotoPost";
 import { UserContext } from "../../Contexts/UserContext";
 import Statistics from "./Statistics/Statistics";
 import NotFound from "../Pages/NotFound";
+import Head from "../Helper/Head";
 
 export const Profile = () => {
   const { data } = useContext(UserContext);
 
   return (
     <section className="container">
+      <Head title="Minha Conta" description="Home Dogs" />
       <ProfileHeader />
       <Routes>
         <Route path="/" element={<Feed user={data.id} />} />
