@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./LoginLost.module.css";
-import Imput from "../../Forms/Input/Input";
-import Button from "../../Forms/Button/Button";
-import useForm from "../../../Hooks/useForm";
+import { Input } from "../../Forms/Input/Input";
+import { Button } from "../../Forms/Button/Button";
+import { useForm } from "../../../Hooks/useForm";
 import { useFetch } from "../../../Hooks/useFetch";
 import { PASSWORD_LOST } from "../../../Api/Api";
 import { Error } from "../../Helper/Error";
@@ -31,7 +31,7 @@ export const LoginLost = () => {
         <p style={{ color: "#4c1" }}>{data}</p>
       ) : (
         <form onSubmit={handleSubmit}>
-          <Imput label="Email / Usuário" type="text" name="login" {...login} />
+          <Input label="Email / Usuário" type="text" name="login" {...login} />
           {loading ? (
             <Button disabled title="Enviando" />
           ) : (
