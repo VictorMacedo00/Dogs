@@ -1,3 +1,10 @@
+# Acesso ao projeto
+
+Login: dog
+Senha: dog
+
+Porém ha a possibilidade de cadastro no sistema
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
